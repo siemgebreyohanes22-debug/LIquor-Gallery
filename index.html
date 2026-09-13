@@ -1,103 +1,259 @@
-```html
-<!-- GALLERY -->
-<section id="gallery" class="gallery">
+liquor-gallery/
+│
+├── index.html
+├── style.css
+└── script.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="section-heading">
-        <p>THE COLLECTION</p>
-        <h2>Explore the <span>Gallery</span></h2>
-    </div>
+    <title>Liquor Gallery | Edmonton</title>
 
-    <div class="gallery-grid">
+    <link rel="stylesheet" href="style.css">
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="IMG_9957" alt="Whisky">
-                <span>01</span>
-            </div>
-            <div class="card-info">
-                <h3>Whisky</h3>
-                <p>Explore classic and contemporary styles.</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-mark">LG</div>
+
+            <div>
+                <h2>LIQUOR GALLERY</h2>
+                <span>DISCOVER • SELECT • SAVOUR</span>
             </div>
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE WINE IMAGE LINK HERE" alt="Wine">
-                <span>02</span>
-            </div>
-            <div class="card-info">
-                <h3>Wine</h3>
-                <p>Discover a variety of styles and regions.</p>
-            </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO</p>
+
+            <h1>Liquor<br><span>Gallery</span></h1>
+
+            <p class="hero-text">
+                A modern destination for discovering a curated selection
+                of spirits, wines and beverages in Edmonton.
+            </p>
+
+            <a href="#gallery" class="gold-button">
+                Explore Gallery
+            </a>
+
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE VODKA IMAGE LINK HERE" alt="Vodka">
-                <span>03</span>
-            </div>
-            <div class="card-info">
-                <h3>Vodka</h3>
-                <p>A gallery of well-known styles and selections.</p>
-            </div>
+        <div class="hero-decoration">
+            <div class="circle"></div>
+            <div class="gold-line"></div>
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE RUM IMAGE LINK HERE" alt="Rum">
-                <span>04</span>
-            </div>
-            <div class="card-info">
-                <h3>Rum</h3>
-                <p>Discover different traditions and styles.</p>
-            </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div class="section-heading">
+            <p>OUR STORY</p>
+            <h2>A Gallery of <span>Fine Selection</span></h2>
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE GRAPPA IMAGE LINK HERE" alt="Grappa">
-                <span>05</span>
+        <div class="about-content">
+
+            <div class="about-box">
+                <div class="number">01</div>
+                <h3>Curated</h3>
+                <p>
+                    A thoughtfully presented collection designed to make
+                    discovering new beverages simple and enjoyable.
+                </p>
             </div>
-            <div class="card-info">
-                <h3>Grappa</h3>
-                <p>Explore traditional Italian styles.</p>
+
+            <div class="about-box">
+                <div class="number">02</div>
+                <h3>Local</h3>
+                <p>
+                    Proudly located in Edmonton and serving the local
+                    community.
+                </p>
             </div>
+
+            <div class="about-box">
+                <div class="number">03</div>
+                <h3>Gallery</h3>
+                <p>
+                    Inspired by the idea of turning product discovery
+                    into a visual experience.
+                </p>
+            </div>
+
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE GIN IMAGE LINK HERE" alt="Gin">
-                <span>06</span>
-            </div>
-            <div class="card-info">
-                <h3>Gin</h3>
-                <p>Discover botanical and contemporary styles.</p>
-            </div>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+
+        <div class="section-heading">
+            <p>THE COLLECTION</p>
+            <h2>Explore the <span>Gallery</span></h2>
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE TEQUILA IMAGE LINK HERE" alt="Tequila">
-                <span>07</span>
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <div class="card-image whisky">
+                    <span>01</span>
+                </div>
+
+                <div class="card-info">
+                    <h3>Whisky</h3>
+                    <p>Explore classic and contemporary styles.</p>
+                </div>
             </div>
-            <div class="card-info">
-                <h3>Tequila</h3>
-                <p>Explore different styles and traditions.</p>
+
+
+            <div class="gallery-card">
+                <div class="card-image wine">
+                    <span>02</span>
+                </div>
+
+                <div class="card-info">
+                    <h3>Wine</h3>
+                    <p>Discover a variety of styles and regions.</p>
+                </div>
             </div>
+
+
+            <div class="gallery-card">
+                <div class="card-image vodka">
+                    <span>03</span>
+                </div>
+
+                <div class="card-info">
+                    <h3>Vodka</h3>
+                    <p>A gallery of well-known styles and selections.</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-card">
+                <div class="card-image rum">
+                    <span>04</span>
+                </div>
+
+                <div class="card-info">
+                    <h3>Rum</h3>
+                    <p>Discover different traditions and styles.</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="gallery-card">
-            <div class="card-image">
-                <img src="PASTE LIQUOR IMAGE LINK HERE" alt="Liquor">
-                <span>08</span>
-            </div>
-            <div class="card-info">
-                <h3>Liquor</h3>
-                <p>A curated collection of selections to discover.</p>
-            </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <div class="section-heading">
+            <p>VISIT US</p>
+            <h2>Get in <span>Touch</span></h2>
         </div>
 
-    </div>
 
-</section>
-```
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <span>ADDRESS</span>
+                    <p>
+                        13030 50 St NW<br>
+                        Edmonton, AB T5A 4V9
+                    </p>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>PHONE</span>
+                    <p>+1 780-406-5477</p>
+                </div>
+
+
+                <div class="contact-item">
+                    <span>EMAIL</span>
+                    <p>liquorgallery384@gmail.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="hours">
+
+                <h3>Opening Hours</h3>
+
+                <div class="hour-row">
+                    <span>Monday – Friday</span>
+                    <strong>11 AM – 12 AM</strong>
+                </div>
+
+                <div class="hour-row">
+                    <span>Saturday</span>
+                    <strong>11 AM – 2 AM</strong>
+                </div>
+
+                <div class="hour-row">
+                    <span>Sunday</span>
+                    <strong>11 AM – 2 AM</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            <div class="logo-mark">LG</div>
+            <h3>LIQUOR GALLERY</h3>
+        </div>
+
+        <p>Discover • Select • Savour</p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 Liquor Gallery. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
