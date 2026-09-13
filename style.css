@@ -1,280 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background: #11110f;
-    color: #f4f0e7;
-    font-family: "Montserrat", sans-serif;
-}
-
-section {
-    padding: 100px 8%;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/* =========================
-   NAVBAR
-========================= */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 22px 6%;
-
-    background: rgba(17, 17, 15, 0.94);
-    backdrop-filter: blur(10px);
-
-    z-index: 1000;
-
-    border-bottom: 1px solid rgba(196, 157, 82, 0.15);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo h2 {
-    font-family: "Cormorant Garamond", serif;
-    letter-spacing: 2px;
-    font-size: 21px;
-}
-
-.logo span {
-    font-size: 7px;
-    letter-spacing: 3px;
-    color: #c49d52;
-}
-
-.logo-mark {
-    width: 42px;
-    height: 42px;
-
-    border: 1px solid #c49d52;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #c49d52;
-
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-nav {
-    display: flex;
-    gap: 35px;
-}
-
-nav a {
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: #c49d52;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-
-    position: relative;
-    overflow: hidden;
-
-    background:
-        radial-gradient(circle at 80% 50%,
-        rgba(196,157,82,0.12),
-        transparent 35%);
-}
-
-.hero-content {
-    max-width: 700px;
-}
-
-.small-title {
-    color: #c49d52;
-    letter-spacing: 5px;
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-.hero h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: clamp(80px, 12vw, 160px);
-    line-height: 0.75;
-    font-weight: 500;
-}
-
-.hero h1 span {
-    color: #c49d52;
-    font-style: italic;
-}
-
-.hero-text {
-    max-width: 480px;
-    margin: 40px 0;
-
-    color: #aaa79e;
-    line-height: 1.8;
-    font-size: 14px;
-}
-
-.gold-button {
-    display: inline-block;
-
-    padding: 16px 30px;
-
-    border: 1px solid #c49d52;
-    color: #c49d52;
-
-    font-size: 11px;
-    letter-spacing: 2px;
-
-    transition: 0.3s;
-}
-
-.gold-button:hover {
-    background: #c49d52;
-    color: #11110f;
-}
-
-.hero-decoration {
-    position: absolute;
-    right: 8%;
-    top: 30%;
-
-    width: 400px;
-    height: 400px;
-}
-
-.circle {
-    width: 350px;
-    height: 350px;
-
-    border: 1px solid rgba(196,157,82,0.35);
-    border-radius: 50%;
-}
-
-.gold-line {
-    width: 200px;
-    height: 1px;
-
-    background: #c49d52;
-
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-
-
-/* =========================
-   SECTION HEADINGS
-========================= */
-
-.section-heading {
-    margin-bottom: 60px;
-}
-
-.section-heading p {
-    color: #c49d52;
-    font-size: 11px;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
-}
-
-.section-heading h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 55px;
-    font-weight: 500;
-}
-
-.section-heading h2 span {
-    color: #c49d52;
-    font-style: italic;
-}
-
-
-/* =========================
-   ABOUT
-========================= */
-
-.about {
-    background: #171714;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.about-box {
-    padding: 35px;
-
-    border: 1px solid rgba(196,157,82,0.15);
-
-    transition: 0.3s;
-}
-
-.about-box:hover {
-    transform: translateY(-8px);
-    border-color: #c49d52;
-}
-
-.number {
-    color: #c49d52;
-    font-size: 12px;
-    margin-bottom: 30px;
-}
-
-.about-box h3 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.about-box p {
-    color: #99968e;
-    line-height: 1.8;
-    font-size: 13px;
-}
-
-
+```css
 /* =========================
    GALLERY
 ========================= */
@@ -282,15 +6,14 @@ nav a:hover {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 22px;
 }
 
 .gallery-card {
     background: #181815;
-
     border: 1px solid rgba(255,255,255,0.06);
-
-    transition: 0.3s;
+    overflow: hidden;
+    transition: 0.4s ease;
 }
 
 .gallery-card:hover {
@@ -298,28 +21,49 @@ nav a:hover {
     border-color: rgba(196,157,82,0.5);
 }
 
+
+/* IMAGE */
+
 .card-image {
-    height: 330px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    padding: 20px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #292924,
-            #11110f
-        );
+    background: #11110f;
 }
 
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.gallery-card:hover .card-image img {
+    transform: scale(1.06);
+}
+
+
+/* NUMBER */
+
 .card-image span {
+    position: absolute;
+    right: 18px;
+    bottom: 15px;
+
     font-family: "Cormorant Garamond", serif;
     color: #c49d52;
     font-size: 30px;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
+
+
+/* CARD INFORMATION */
 
 .card-info {
     padding: 25px;
@@ -338,167 +82,39 @@ nav a:hover {
 }
 
 
-/* =========================
-   CONTACT
-========================= */
-
-.contact {
-    background: #171714;
-}
-
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-}
-
-.contact-item {
-    margin-bottom: 35px;
-}
-
-.contact-item span {
-    color: #c49d52;
-    font-size: 10px;
-    letter-spacing: 3px;
-}
-
-.contact-item p {
-    margin-top: 10px;
-    color: #aaa79e;
-    line-height: 1.8;
-    font-size: 14px;
-}
-
-.hours {
-    border-left: 1px solid rgba(196,157,82,0.3);
-    padding-left: 40px;
-}
-
-.hours h3 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-
-.hour-row {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 18px 0;
-
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-
-    color: #aaa79e;
-    font-size: 12px;
-}
-
-.hour-row strong {
-    color: #c49d52;
-    font-weight: 500;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    text-align: center;
-    padding: 60px 8%;
-
-    background: #0d0d0c;
-}
-
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.footer-logo h3 {
-    font-family: "Cormorant Garamond", serif;
-    letter-spacing: 3px;
-}
-
-footer > p {
-    color: #77746d;
-    font-size: 10px;
-    letter-spacing: 3px;
-    margin-top: 20px;
-}
-
-.footer-line {
-    height: 1px;
-    max-width: 300px;
-
-    background: rgba(196,157,82,0.3);
-
-    margin: 30px auto;
-}
-
-.copyright {
-    font-size: 9px !important;
-    letter-spacing: 1px !important;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
+/* TABLET */
 
 @media (max-width: 900px) {
-
-    nav {
-        display: none;
-    }
-
-    .hero-decoration {
-        opacity: 0.3;
-        right: -150px;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-    }
 
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    .hours {
-        border-left: none;
-        border-top: 1px solid rgba(196,157,82,0.3);
-        padding-left: 0;
-        padding-top: 40px;
+    .card-image {
+        height: 330px;
     }
 }
 
+
+/* PHONE */
 
 @media (max-width: 550px) {
 
-    section {
-        padding: 80px 6%;
-    }
-
-    .logo h2 {
-        font-size: 16px;
-    }
-
-    .hero h1 {
-        font-size: 85px;
-    }
-
     .gallery-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
-    .section-heading h2 {
-        font-size: 43px;
+    .card-image {
+        height: 390px;
+    }
+
+    .card-info {
+        padding: 22px;
+    }
+
+    .card-info h3 {
+        font-size: 30px;
     }
 }
+```
